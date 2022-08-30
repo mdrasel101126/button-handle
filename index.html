@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 75% 25%;
+            gap: 10px;
+            margin: 10px;
+        }
+        .person-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+        .person{
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        button{
+            background-color: coral;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <section>
+    <div class="container">
+        <div class="person-container">
+            <div class="person">
+                <h4>person-1</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-2</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-3</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-4</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-5</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-6</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-7</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-8</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-9</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-10</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-11</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+            <div class="person">
+                <h4>person-12</h4>
+                <button onclick="handlePersonButton(this)">add</button>
+            </div>
+        </div>
+        <div class="list-container">
+            <h3>List Person</h3>
+            <ol id="list">
+                
+            </ol>
+        </div>
+    </div>
+   </section> 
+
+   <script src="person.js"></script>
+</body>
+</html>
